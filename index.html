@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dan's Draws</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Dan's Draws!</h1>
+        <p>Enter the draw to win £100 cash! Only 100 tickets available.</p>
+
+        <form id="ticketForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="tickets">Tickets (1–5):</label>
+            <input type="number" id="tickets" min="1" max="5" required>
+
+            <button type="submit">Get Ticket Numbers</button>
+        </form>
+
+        <div id="ticketNumbers"></div>
+
+        <h2>Manual Draw Number Generator</h2>
+        <button onclick="drawWinner()">Draw Now</button>
+        <p id="winnerResult"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
