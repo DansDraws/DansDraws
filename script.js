@@ -1,1 +1,1 @@
-console.log('Dan\'s Draws Loaded');
+// JS for number grid, checkbox logic, email triggers, etc.
